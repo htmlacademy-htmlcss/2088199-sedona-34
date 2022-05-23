@@ -9,18 +9,18 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a href="index.html" class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="#" alt="Логотип сайта городка Седона">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -123,15 +123,15 @@
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <a class="button button-table" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button button-slideshow" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button button-list" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
+      <button class="button button-table" href="#">
+        <span class="visually-hidden">Показать таблицу</span>
+      </button>
+      <button class="button button-slideshow" href="#">
+        <span class="visually-hidden">Показать слайдшоу</span>
+      </button>
+      <button class="button button-litst" href="#">
+        <span class="visually-hidden">Показать листы</span>
+      </button>
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -140,14 +140,8 @@
           </a>
           <span class="product-card-type">Гостиница</span>
           <span class="product-card-price">От 4000 ₽</span>
-          <a class="button button-more" href="#">Подробнее</a>
-          <a class="button button-favorite" href="#">В избранное</a>
-          <a class="product-card-raiting-stars">
-            <img class="star" src="#" alt="рейтинг одна звезда">
-            <img class="star" src="#" alt="рейтинг две звезды">
-            <img class="star" src="#" alt="рейтинг три звезды">
-            <img class="star" src="#" alt="рейтинг четыри звезды">
-          </a>
+          <button class="button button-more">Подробнее</button>
+          <button class="button button-favorite">В избранное</button>
           <a class="product-card-raiting-score" href="#">
             <span>Рейтинг: 8,5</span>
           </a>
@@ -159,14 +153,8 @@
           </a>
           <span class="product-card-type">Гостиница</span>
           <span class="product-card-price">От 5000 ₽</span>
-          <a class="button button-more" href="#">Подробнее</a>
-          <a class="button button-favorite favorite-current" href="#">В избранное</a>
-          <a class="product-card-raiting-stars">
-            <img class="star" src="#" alt="рейтинг одна звезда">
-            <img class="star" src="#" alt="рейтинг две звезды">
-            <img class="star" src="#" alt="рейтинг три звезды">
-            <img class="star" src="#" alt="рейтинг четыри звезды">
-          </a>
+          <button class="button button-more">Подробнее</button>
+          <button class="button button-favorite button-favorite--current">В избранное</button>
           <a class="product-card-raiting-score" href="#">
             <span>Рейтинг: 9,2</span>
           </a>
@@ -178,13 +166,8 @@
           </a>
           <span class="product-card-type">Гостиница</span>
           <span class="product-card-price">От 2500 ₽</span>
-          <a class="button button-more" href="#">Подробнее</a>
-          <a class="button button-favorite" href="#">В избранное</a>
-          <a class="product-card-raiting-stars">
-            <img class="star" src="#" alt="рейтинг одна звезда">
-            <img class="star" src="#" alt="рейтинг две звезды">
-            <img class="star" src="#" alt="рейтинг три звезды">
-          </a>
+          <button class="button button-more">Подробнее</button>
+          <button class="button button-favorite">В избранное</button>
           <a class="product-card-raiting-score" href="#">
             <span>Рейтинг: 6,9</span>
           </a>
@@ -196,12 +179,8 @@
           </a>
           <span class="product-card-type">Гостиница</span>
           <span class="product-card-price">От 1500 ₽</span>
-          <a class="button button-more" href="#">Подробнее</a>
-          <a class="button button-favorite" href="#">В избранное</a>
-          <a class="product-card-raiting-stars">
-            <img class="star" src="#" alt="рейтинг одна звезда">
-            <img class="star" src="#" alt="рейтинг две звезды">
-          </a>
+          <button class="button button-more">Подробнее</button>
+          <button class="button button-favorite">В избранное</button>
           <a class="product-card-raiting-score" href="#">
             <span>Рейтинг: 5,0</span>
           </a>
@@ -209,7 +188,7 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link pagination-link--current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -228,10 +207,15 @@
         </li>
       </ul>
       <span class="catalog-found">Гостиниц на странице:</span>
-      <select class="select-control" area-label="найденное количество">
+      <select class="select-control" area-label="отображаемое количество результатов">
         <option value="cheap">4</option>
+        <option value="cheap"></option>
+        <option value="cheap"></option>
+        <option value="cheap"></option>
       </select>
     </section>
+  </main>
+  <footer class="page-footer">
     <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -241,8 +225,6 @@
         <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
     </section>
-  </main>
-  <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
