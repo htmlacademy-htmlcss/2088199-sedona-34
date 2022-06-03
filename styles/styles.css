@@ -183,3 +183,52 @@ body {
   line-height: 26px;
   color: #333333;
 }
+
+/* buttons */
+
+.button {
+
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background: #756157;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-catalog {
+  text-decoration: none;
+}
+
+.button-newsletter {
+  background: #82B3D3;
+}
+
+.button-more {
+  text-decoration: none;
+}
+
+.button-favorite {
+  background: #82B3D3;
+}
+
+.button-favorite--current {
+  background: #7DB54F;
+}
+
+.button-submit {
+  background: #82B3D3;
+}
+
+.button-reset {
+  background: none;
+}
+
+/* pagination */
+
+.pagination-link {
+  text-decoration: none;
+}
