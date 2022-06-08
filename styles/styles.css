@@ -14,15 +14,54 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #E5E5E5;
+}
+
+/* container */
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 /* navigation */
+
+/* 5.22. Сетка страниц и крупных блоков на флексах */
+
+ /* .navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin: auto;
+} */
 
 .navigation-link {
   font-size: 20px;
@@ -36,8 +75,10 @@ body {
 
 /* main */
 
-.main-index {
-  background-image: url("/images/index/index-background.jpg");
+.main-logo-wrapper {
+  display: block;
+  margin: 0 auto;
+  background-image: url("/images/index/divider-background.svg"), url("/images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -64,6 +105,18 @@ body {
 .advantages {
   color: #333333;
   text-align: center;
+}
+
+.advantages-photo {
+
+}
+
+.advantages-list {
+
+}
+
+.advantages-item {
+
 }
 
 .advantages-title {
@@ -141,7 +194,8 @@ body {
 }
 
 /* inner */
-.container {
+
+.filter {
   background-image: url("/images/catalog/catalog-background-1.jpg");
   background-repeat: no-repeat;
   color: #ffffff
@@ -231,4 +285,19 @@ body {
 
 .pagination-link {
   text-decoration: none;
+}
+
+/* visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
