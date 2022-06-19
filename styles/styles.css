@@ -51,8 +51,8 @@ body {
 }
 
 .advantages-big-container {
-width: 400px;
-min-height: 384px;
+  width: 400px;
+  min-height: 384px;
 }
 
 .page-footer-container {
@@ -65,6 +65,13 @@ min-height: 384px;
 .catalog-view-container {
   display: flex;
   margin-bottom: 56px;
+}
+
+.product-info-container {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pagination-container {
@@ -401,6 +408,8 @@ min-height: 384px;
 .product-card-type,
 .product-card-price {
   color: #333333;
+  width: 140px;
+  height: 21px;
 }
 
 /* pagination */
@@ -419,7 +428,7 @@ min-height: 384px;
   height: 60px;
   line-height: 36px;
   font-weight: 700;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
   text-align: center;
