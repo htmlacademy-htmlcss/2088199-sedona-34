@@ -129,7 +129,7 @@
         </section>
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы  покажем вам лучшие предложения
+          <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в
             Седоне &nbsp
           </p>
@@ -203,6 +203,56 @@
         </div>
       </footer>
       <!-------------------------------------------- footer ------------------------------------------------->
+    </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="modal-booking-item">
+              <label class="modal-booking-name" for="checkindata">Дата Заезда:</label>
+              <input class="modal-booking-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020"
+                required>
+            </p>
+            <div class="modal-booking-warning warning-error">Мы не можем отправить вас в прошлое.</div>
+          </form>
+          <p class="modal-booking-item">
+            <label class="modal-booking-name" for="checkoutdata">Дата Выезда:</label>
+            <input class="modal-booking-input" type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2020"
+              required>
+          </p>
+          <div class="modal-booking-warning">На эти даты есть свободные номера. Пока есть.</div>
+          <div class="modal-container-people">
+            <p class="booking-adults">
+              <label class="modal-label" for="adults">Взрослые:</label>
+              <button class="button-adult-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+              </button>
+              <input class="modal-input-number" type="number" name="number-of-adults" id="adults"
+                placeholder="2" min="1" required>
+              <button class="button-adult-plus" type="button">
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+              </button>
+            </p>
+            <p class="booking-children">
+              <label class="modal-label modal-label-children" for="children">Дети:</label>
+              <button class="button-adult-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+              </button>
+              <input class="modal-input-number" type="number" name="number-of-children" id="children"
+                placeholder="2" min="1" required>
+              <button class="button-adult-plus" type="button">
+                <span class="visually-hidden">Увеличить количество детей</span>
+              </button>
+            </p>
+          </div>
+          <button class="button modal-button-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

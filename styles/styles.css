@@ -362,7 +362,8 @@ body {
 
 .newsletter-title {
   margin: 0;
-  padding-top: 94px;
+  margin-bottom: 29px;
+  padding-top: 61px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -642,7 +643,6 @@ body {
   border: 2px solid #FFFFFF;
   flex-direction: row-reverse;
   align-items: center;
-  padding-right: 19px;
 }
 
 .catalog-filter-label:not(:last-child) {
@@ -657,11 +657,25 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.catalog-filter-label:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  outline: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 4px #81B3D2;
+}
+
+.range-input:active {
+  background: #756257;
+  outline: 2px solid #FFFFFF;
+}
+
 .range-input {
-  width: 84px;
+  width: 121px;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 8px;
   padding-left: 19px;
   font: inherit;
   font-size: 18px;
@@ -675,6 +689,18 @@ body {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.input-from {
+  position: absolute;
+  width: 30px;
+  opacity: 0.3;
+}
+
+.input-before {
+  position: absolute;
+  width: 31px;
+  opacity: 0.3;
 }
 
 .control {
@@ -711,7 +737,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   position: absolute;
   background-image: url("../images/catalog/check-mark.svg");
   background-repeat: no-repeat;
@@ -733,12 +759,11 @@ body {
   content: "";
 }
 
-
 /* catalog */
 
 .catalog {
   background-color: #ffffff;
-  padding: 50px 71px 56px 72px;
+  padding: 55px 71px 56px 72px;
 }
 
 .catalog-filter {
@@ -759,10 +784,32 @@ body {
 .select-control {
   margin-left: 191px;
   width: 290px;
-  height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 10px 15px;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 18px;
+  background: url("../images/catalog/catalog-vector.svg") no-repeat right 17px center;
+  appearance: none;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .view-switch-container {
@@ -875,7 +922,10 @@ fieldset.catalog-filter-group:nth-child(1) {
 }
 
 .product-card-title {
-  margin: 16px 0;
+  margin: 0;
+  margin-bottom: 14px;
+  margin-top: 13px;
+  font-size: 24px;
 }
 
 .product-card-type,
@@ -926,7 +976,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 }
 
 .pagination-link:last-child {
-  padding: 12px 18px;
+  padding: 11px 18px;
 }
 
 .pagination-item:not(:last-child) {
@@ -960,7 +1010,8 @@ fieldset.catalog-filter-group:nth-child(1) {
 .pagination-select-control {
   width: 160px;
   margin-left: 51px;
-  margin-top: 6px;
+  margin-top: 4px;
+  margin-bottom: 7px;
 }
 
 
@@ -978,6 +1029,8 @@ fieldset.catalog-filter-group:nth-child(1) {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  margin-bottom: 47px;
 }
 
 /* buttons */
@@ -1129,4 +1182,88 @@ fieldset.catalog-filter-group:nth-child(1) {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* disabled */
+
+.control-input:disabled + .control-mark,
+.control-input[type="checkbox"]:checked:disabled + .control-mark,
+.control-input[type="radio"]:checked:disabled + .control-mark,
+.range-input:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #E5E5E5;
+}
+
+/* modal */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  background-color: #FFFFFF;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 577px;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 53px;
+  right: 71px;
+  width: 53px;
+  height: 53px;
+  border: 0 solid #000000;
+  border-radius: 50%;
+  background: #F2F2F2 url("../images/modal/modal-close-icon.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  border: none;
+  opacity: 0.5;
+}
+
+.modal-booking-item {
+  display: flex;
+  margin: 0;
+}
+
+.modal-booking-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.modal-booking-input {
+  padding: 0;
 }
