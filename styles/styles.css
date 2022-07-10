@@ -362,12 +362,16 @@ body {
 
 .newsletter-title {
   margin: 0;
-  margin-bottom: 29px;
-  padding-top: 61px;
+  padding-top: 94px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.newsletter-title--white {
+  padding-top: 62px;
+  margin-bottom: 27px;
 }
 
 .newsletter-description {
