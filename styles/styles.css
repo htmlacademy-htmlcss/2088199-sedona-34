@@ -788,7 +788,6 @@ body {
   border-radius: 4px;
   padding: 10px 15px;
   font-family: 'PT Sans';
-  font-weight: 400;
   font-size: 18px;
   background: url("../images/catalog/catalog-vector.svg") no-repeat right 17px center;
   appearance: none;
@@ -1228,7 +1227,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 53px;
+  top: 55px;
   right: 71px;
   width: 53px;
   height: 53px;
@@ -1255,15 +1254,252 @@ fieldset.catalog-filter-group:nth-child(1) {
 }
 
 .modal-booking-item {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
 }
 
+.modal-booking-item:nth-child(1) {
+  margin-top: 70px;
+
+}
+
 .modal-booking-name {
+  margin-right: 32px;
   font-weight: 700;
   font-size: 20px;
+  width: 135px;
 }
 
 .modal-booking-input {
+  padding: 14px 19px;
+  width: 420px;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal-booking-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-booking-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-booking-input:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+}
+
+
+.modal-calendar-icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.3);
+  top: 19px;
+  right: 21px;
+}
+
+.modal-booking-status {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 156px;
+  margin-bottom: 10px;
+}
+
+.status-error {
+  color: #FF5757;
+}
+
+.modal-counter-input {
+  padding: 14px 26px;
+  padding-left: 41px;
+  width: 66px;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
+.counter-input-children {
+  margin-left: 43px;
+}
+
+.modal-container-people {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 39px;
+}
+
+.modal-booking-counter {
+  margin: 0;
+}
+
+.modal-counter-children {
+  margin-top: -2px;
+}
+
+.modal-booking-adults {
+  margin-right: 60px;
+}
+
+.button-counter {
   padding: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-counter:hover .modal-counter-icon {
+  fill: #000000;
+}
+
+.button-counter:focus .modal-counter-icon {
+  fill: #000000;
+}
+
+.button-counter:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-counter:active .modal-counter-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.button-counter:active {
+  outline: none;
+}
+
+.button-adults-minus {
+  top: 7px;
+  left: 166px;
+}
+
+.button-adults-plus {
+  top: 11px;
+  left: 248px;
+}
+
+.modal-counter-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.modal-booking-children {
+  margin: 0;
+  margin-left: 56px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 243px;
+  height: 16px;
+  bottom: 20px;
+}
+
+.tooltip-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-icon {
+  width: 8px;
+  height: 10px;
+  fill: #FFFFFF;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 15px 24px 23px 22px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: -166px;
+  left: -115px;
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-text:after {
+  position: absolute;
+  top: -9px;
+  left: 118px;
+  width: 20px;
+  height: 10px;
+  background-image: url("../images/modal/modal-vector-info.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.button-children-minus {
+  right: 94px;
+  bottom: 14px;
+}
+
+.button-children-plus {
+  right: 13px;
+  bottom: 10px;
+}
+
+.modal-button-search {
+  width: 576px;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #83B3D3;
+}
+
+.modal-button-search:hover,
+.button-children-info:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button-search:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.modal-button-search:active,
+.button-children-info:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Modal ON/OFF */
+
+.modal-container-close {
+  display: none;
 }
