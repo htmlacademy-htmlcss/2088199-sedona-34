@@ -239,6 +239,13 @@ body {
   background-position: 50% 25%;
 }
 
+.advantages-item-house h3,
+.advantages-item-food h3,
+.advantages-item-souvenir h3 {
+  padding-top: 184px;
+  margin-bottom: 29px;
+}
+
 .advantages-item-food {
   background-image: url("../images/index/food-icon.svg");
   background-repeat: no-repeat;
@@ -516,6 +523,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -1520,6 +1528,6 @@ fieldset.catalog-filter-group:nth-child(1) {
 
 /* Modal ON/OFF */
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
