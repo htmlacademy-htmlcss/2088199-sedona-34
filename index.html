@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   </head>
 
   <body>
@@ -129,8 +130,9 @@
         </section>
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
-            Седоне
+          <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+            гостиниц в
+            Седоне &nbsp
           </p>
           <a class="button button-catalog" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
@@ -202,6 +204,81 @@
         </div>
       </footer>
       <!-------------------------------------------- footer ------------------------------------------------->
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="modal-booking-item">
+              <label class="modal-booking-name" for="checkindata">Дата Заезда:</label>
+              <input class="modal-booking-input" type="text" name="check-in" id="checkindata"
+                placeholder="27 апреля 2020" required>
+            </p>
+            <div class="modal-booking-status status-error">Мы не можем отправить вас в прошлое.</div>
+            <p class="modal-booking-item">
+              <label class="modal-booking-name" for="checkoutdata">Дата Выезда:</label>
+              <input class="modal-booking-input" type="text" name="check-out" id="checkoutdata"
+                placeholder="1 сентября 2021" required>
+            </p>
+            <div class="modal-booking-status">На эти даты есть свободные номера. Пока есть.</div>
+            <div class="modal-container-people">
+              <p class="modal-booking-counter">
+                <label class="modal-booking-name modal-booking-adults" for="adults">Взрослые:</label>
+                <button class="button-counter button-counter-minus button-adults-minus" type="button">
+                  <svg class="modal-counter-icon" width="15" height="2" viewBox="0 0 15 2" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                </button>
+                <input class="modal-counter-input" type="number" name="number-of-adults" id="adults" placeholder="2"
+                  min="1" required>
+                <button class="button-counter button-counter-plus button-adults-plus" type="button">
+                  <svg class="modal-counter-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Увеличить количество взрослых.</span>
+                </button>
+              </p>
+              <p class="modal-booking-counter modal-counter-children">
+                <label class="modal-booking-name modal-booking-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.11 0h2v2h-2V0Zm2 12h-2V3h2v9Z" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" id="tooltip-label">Укажите количество детей,<br> которые будут с вами,
+                    возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                </span>
+                <button class="button-counter button-counter-minus button-children-minus" type="button">
+                  <svg class="modal-counter-icon" width="15" height="2" viewBox="0 0 15 2" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество детей.</span>
+                </button>
+                <input class="modal-counter-input counter-input-children" type="number" name="number-of-children"
+                  id="children" placeholder="1" min="0">
+                <button class="button-counter button-counter-plus button-children-plus" type="button">
+                  <svg class="modal-counter-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Увеличить количество детей.</span>
+                </button>
+              </p>
+            </div>
+            <button class="button modal-button-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

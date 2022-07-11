@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   </head>
 
   <body>
@@ -88,58 +89,84 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming pool" checked>
-                        Бассейн
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-type" value="hotels" checked>
-                        Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="product-type" value="hotels"
+                          checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-type" value="motel">
-                        Мотель
+                        <input class="visually-hidden control-input" type="radio" name="product-type" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-type" value="apartments">
-                        Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="product-type"
+                          value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="min-price">от
-                    <input type="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">до
-                    <input type="number" name="max-price" value="9000">
-                  </label>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        <span class="input-from">от</span>
+                        <input class="range-input range-input-left" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="catalog-filter-label">
+                        <span class="input-before">до</span>
+                        <input class="range-input range-input-right" type="number" value="9000" name="max-price">
+                      </label>
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="width: 227px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
-                <button class="button button-submit" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
+                <div class="price-buttons">
+                  <button class="button button-submit" type="submit">Применить</button>
+                  <button class="button button-reset" type="reset">Сбросить</button>
+                </div>
               </form>
             </section>
           </div>
@@ -282,7 +309,7 @@
       <!-------------------------------------------- footer ------------------------------------------------>
       <footer class="page-footer">
         <section class="newsletter-catalog newsletter-catalog--white">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <h2 class="newsletter-title newsletter-title--white">Подпишитесь на рассылку</h2>
           <p class="newsletter-description-catalog">Только полезная информация и никакого спама,<br> честное
             бойскаутское!
           </p>
