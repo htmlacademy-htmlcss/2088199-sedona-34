@@ -139,17 +139,20 @@ img {
   text-decoration: none;
 }
 
-.navigation-item-button {
-  margin-left: 20px;
+.navigation-link-search {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.navigation-link-favorites {
+  background-image: url("../images/header/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-item-button {
+  margin-left: 20px;
 }
 
 .navigation-icon-favorites {
@@ -878,14 +881,22 @@ img {
   border: 2px solid #000000;
 }
 
-.view-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
+.view-switch-container .view-switch:nth-child(1) {
+  background-image: url("../images/catalog/table-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-switch-container .view-switch:nth-child(2) {
+  background-image: url("../images/catalog/slideshow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-switch-container .view-switch:nth-child(3) {
+  background-image: url("../images/catalog/list-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-filter-group {
@@ -977,7 +988,6 @@ fieldset.catalog-filter-group:nth-child(1) {
 .hotel-star-two {
   width: 42px;
 }
-
 
 /* pagination */
 
