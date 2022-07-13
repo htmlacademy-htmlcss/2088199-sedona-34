@@ -1471,7 +1471,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 
 .tooltip-text {
   background-color: #333333;
-  width: 211px;
+  width: 213px;
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
@@ -1479,7 +1479,7 @@ fieldset.catalog-filter-group:nth-child(1) {
   border-radius: 8px;
   box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
   position: absolute;
-  bottom: -158px;
+  top: 40px;
   left: -115px;
   z-index: 1;
   display: none;
