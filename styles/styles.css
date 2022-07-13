@@ -1538,7 +1538,7 @@ fieldset.catalog-filter-group:nth-child(1) {
   outline: none;
 }
 
-/* Modal ON/OFF */
+/* Modal ON & OFF switcher */
 
 .modal-container-close {
   display: none;
