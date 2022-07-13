@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -372,7 +372,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
 }
 
 .newsletter-title {
@@ -820,7 +820,7 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 10px 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-size: 18px;
   background: url("../images/catalog/catalog-vector.svg") no-repeat right 17px center;
   appearance: none;
@@ -1087,7 +1087,7 @@ fieldset.catalog-filter-group:nth-child(1) {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
 }
 
 .footer-social-item .button {
@@ -1168,7 +1168,7 @@ fieldset.catalog-filter-group:nth-child(1) {
   background: #f2f2f2;
   border-radius: 4px;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
 }
 
 .button-submit {
@@ -1317,7 +1317,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 .modal-booking-input {
   padding: 14px 40px 14px 19px;
   width: 391px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-size: 18px;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1355,7 +1355,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 .modal-counter-input {
   padding: 14px 34px;
   width: 66px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-size: 18px;
   background-color: #f2f2f2;
   border-radius: 4px;
