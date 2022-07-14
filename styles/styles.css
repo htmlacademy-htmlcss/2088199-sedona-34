@@ -1002,7 +1002,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   padding: 12px 24px;
   line-height: 36px;
@@ -1114,7 +1114,7 @@ fieldset.catalog-filter-group:nth-child(1) {
 .button-catalog {
   text-decoration: none;
   width: 544px;
-  height: 39px;
+  min-height: 39px;
   margin-bottom: 93px;
   padding: 11px 15px;
   font-size: 20px;
